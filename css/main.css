@@ -1,0 +1,57 @@
+body{
+  font-family: sans-serif; /* tipo de letra */
+}
+
+
+nav { /* para qiue el navegador lo reconozaca como  una barra y no como lista*/
+  outline: 1px solid yellow;
+  width:  180px;
+}
+ul{
+
+  /*outline: 1px solid purple;*/
+  list-style: none; /* para quitar las viñetas*/
+  margin: 0; /* en otros navegadores  no reconoce entonces para asegurarnos  le  quitamos el paddin y margin*/
+  padding: 0;/*  quita todo el espacio sobrante y lo coloca pegado izquierda */
+
+  line-height: 25px; /* separacion entre palabras , espacio vertical entre lineas*/
+}
+
+li{
+/*  outline: 1px solid red ;*/
+  background-color: #f5f5f0;
+}
+
+a {
+/*  outline: 1px solid green; */
+  display: block ; /* como por defecto es inline  no podemos modificar su tamaño entonces cambiamos  a display block  para que ocupe todo el espacio */
+  text-decoration: none; /* para quitar el subrrayado del texto por defecto*/
+  color:#000; /* letra de color negro */
+  padding-left: 15px;
+
+}
+
+a:hover{
+  background: #e0e0d1;
+}
+
+a:active{
+  background: #333;
+  color:#fff;
+}
+
+ul li:first-child { /* especifica al primer hijo li de ul */
+background-color: #f9a91a;
+}
+
+ul li:first-child  a{
+  color: #fff;
+}
+
+ul li:first-child  a:hover{
+  color: #000;
+}
+
+ul li:first-child  a:active{
+  color: #fff;
+}
